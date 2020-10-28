@@ -1,29 +1,28 @@
 package ro.mta.facc.selab;
 
-import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Collections;
 
 public class Biblioteca {
-    private ArrayList<Carte> carti;
+    private ArrayList<Carte> listaCarti;
 
     public Biblioteca() {
-        carti = new ArrayList<Carte>();
+        listaCarti = new ArrayList<Carte>();
     }
 
     public void add(Carte c)
     {
-        carti.add(c);
+        listaCarti.add(c);
     }
 
     public void sort()
     {
-        Collections.sort(carti);
+        Collections.sort(listaCarti);
     }
 
     public void removeBook(Carte c)
     {
-        carti.remove(c);
+        listaCarti.remove(c);
     }
 
     @Override
@@ -32,7 +31,7 @@ public class Biblioteca {
         builder = new StringBuilder();
         builder.append("Biblioteca contine:\n");
 
-        for (Carte c : carti)
+        for (Carte c : listaCarti)
         {
             builder.append(c);
             builder.append("\n");

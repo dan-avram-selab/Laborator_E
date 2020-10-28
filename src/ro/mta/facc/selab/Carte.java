@@ -2,7 +2,25 @@ package ro.mta.facc.selab;
 
 public class Carte implements Comparable<Carte> {
     private String titlu;
+
+    public String getTitlu() {
+        return titlu;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public int getNrPagini() {
+        return nrPagini;
+    }
+
     private String autor;
+
+    public int getAnPublicatie() {
+        return anPublicatie;
+    }
+
     private int anPublicatie;
 
     @Override
@@ -13,6 +31,8 @@ public class Carte implements Comparable<Carte> {
             return 1;
         return 0;
     }
+
+
 
     private int nrPagini;
 
