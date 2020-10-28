@@ -7,10 +7,6 @@ public class Carte implements Comparable<Carte> {
         return titlu;
     }
 
-    public String getAutor() {
-        return autor;
-    }
-
     public int getNrPagini() {
         return nrPagini;
     }
@@ -22,6 +18,14 @@ public class Carte implements Comparable<Carte> {
     }
 
     private int anPublicatie;
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
 
     @Override
     public int compareTo(Carte o) {
