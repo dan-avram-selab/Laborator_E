@@ -1,5 +1,14 @@
 package ro.mta.facc.selab;
-
+/**
+ * Modeleaza un obiect de tip carte pentru a putea fi folosit intr-o alta clasa(Ex. {@link Biblioteca})
+ * <p><b>Important:</b> Pentru stocare se va folosi un obiect de tip Container</p>
+ *
+ * <pre>Carte c = new Carte("Zece negri mititei", "Agatha Cristie", 1998, 719);</pre>
+ *
+ * @author dan.avram
+ * @see Biblioteca
+ * @see Utilizator
+ */
 public class Carte implements Comparable<Carte> {
     private String titlu;
 
